@@ -152,7 +152,9 @@ font-size: 1.3rem;
 }
 
 .navbar-list-item-lang {
-  font-size: 0.6rem;
+  font-size: 0.45rem;
+  text-transform: uppercase;
+  font-weight: 300;
  }
 
 .langs-switcher {
