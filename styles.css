@@ -105,6 +105,8 @@ a:link {
 
 .langs-menu {
   display: flex;
+  color: purple;
+  background-color: plum;
 }
 
 .nav{
@@ -493,3 +495,8 @@ padding-top: 5rem;
   }
  }
  
+
+#langs {
+  color: purple;
+  background-color: plum;
+}
