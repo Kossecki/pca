@@ -255,6 +255,10 @@ color: purple;
   margin-left: auto;
   margin-right: auto;
 }
+
+.portrait-text{
+  font-family: Nunito;;
+}
 .smaller-text {
 padding-right: 1.5rem;
 font-weight: 300;
