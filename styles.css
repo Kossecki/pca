@@ -248,12 +248,18 @@ color: purple;
   background-color: #ffe8de;
 }
 .portrait{
-  display: block;
+  display: none;
   width: 140px;
   height: auto;
   margin-top: 0.8rem;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media (min-width: 760px){
+  .portrait{
+    display: block;
+}
 }
 
 .portrait-text{
@@ -347,8 +353,14 @@ margin-right: auto;
 .ls-lh{
   font-size: 1.6rem;
   line-height: 1.7;
+  margin-left: 3.4rem;
 }
 
+@media (min-width: 780px){
+  .ls-lh{
+    margin-left: 0;
+  }
+}
 /*About me*/
 .about-me{
   margin-bottom: 3rem;
