@@ -31,6 +31,7 @@ h1{
   margin:0;
 }
 a {
+  padding: 0;
   background-color: none;
   text-decoration: none;
   color: black;
@@ -100,7 +101,6 @@ a:link {
 }
 .menu-item :last-child {
   border-bottom: none;
-  padding-bottom: 1rem;
 }
 
 .langs-menu {
@@ -353,7 +353,6 @@ margin-right: auto;
 .ls-lh{
   font-size: 1.6rem;
   line-height: 1.7;
-  margin-left: 3.4rem;
 }
 
 @media (min-width: 780px){
