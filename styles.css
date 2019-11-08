@@ -44,10 +44,6 @@ a:active {
   color: white;
 }
 
-/* a:link {
-  color: black;
-}
- */
 
   /* Header */
 
@@ -107,7 +103,7 @@ a:active {
     margin-block-start: 0;
     margin-block-end: 0;
     padding-inline-start: 0;
-  text-align: center;
+    text-align: center;
 }
 
 .hidden {
@@ -319,12 +315,12 @@ margin-right: auto;
   }
 }
 
-@media (max-width: 780px){
+/* @media (max-width: 780px){
  
     margin-left: auto;
     margin-right: auto;
   }
-}
+} */
 
 .cnt{
   text-align: center;
@@ -382,6 +378,7 @@ justify-content: space-around;
 
 .wide {
   width: 90%;
+  margin: 0 auto;
 }
 @media(min-width:750px){
   .wide{
