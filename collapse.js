@@ -7,7 +7,7 @@ element.onclick = function () {
 }
 
 // desktop language switcher
-let langsOptions = document.getElementById("langs-switcher_options");
+let langsOptions = document.getElementById("langs-switcher-options");
 let active = document.getElementById("active");
 
 active.onclick = () => {
