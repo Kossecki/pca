@@ -49,6 +49,72 @@ ul {
   margin-block-end: 0;
   padding-inline-start: 0;
 }
+
+/* Columns */
+.column30 {
+  width: 30%;
+  padding-right: 2rem;
+}
+
+@media (max-width: 770px) {
+  .column30 {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.column60 {
+  width: 90%;
+}
+
+@media (min-width: 845px) {
+  .column60 {
+     width: 60%;
+  }
+}
+
+.column70 {
+  width: 70%;
+}
+@media (max-width: 770px) {
+  .column70 {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.column-issues {
+  max-width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-inline-start: 1rem;
+}
+
+@media(min-width:771px){
+.column-issues-narrow {
+  max-width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-inline-start: 1rem;
+  padding-bottom: 1rem;
+}
+}
+
+/* Row */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+@media (max-width: 750px) {
+  .row {
+    display: block;
+    width: 100%;
+  }
+}
 /* Header */
 
 .navbar {
@@ -137,11 +203,13 @@ ul {
   background-color: plum;
 }
 
+.navbar-options,
 .navbar-list {
   display: none;
   list-style-type: none;
 }
 @media (min-width: 942px) {
+  .navbar-options,
   .navbar-list {
     display: flex;
     align-items: center;
@@ -168,7 +236,7 @@ ul {
 
 .navbar-list-item-lang {
   display: block;
-  font-size: 1.1rem;
+  font-size: 1rem;
   line-height: 1.4;
   text-transform: uppercase;
   font-weight: 300;
@@ -203,18 +271,6 @@ align-self: flex-end;
   }
 }
 
-.third {
-  width: 30%;
-  padding-right: 1rem;
-}
-
-@media (max-width: 770px) {
-  .third {
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
 
 .appt-intl {
   display: none;
@@ -241,27 +297,38 @@ align-self: flex-end;
   }
 }
 
-.hightlight {
-  background-color: #ffe8de;
-}
 .portrait {
-  display: none;
-  margin: 1rem auto;
   width: 140px;
   height: auto;
+  margin: 1rem auto;
 }
 
-@media (min-width: 760px) {
-  .portrait {
+.portrait-fullscreen {
+  display: none;
+}
+
+@media (min-width: 770px) {
+  .portrait-fullscreen {
     display: block;
   }
+}
+
+.portrait-mobile {
+  display: block;
+  padding-top: 2rem;
+}
+
+@media (min-width:770px){
+  .portrait-mobile{
+  display: none;
+}
 }
 
 .portrait-text {
   font-family: Nunito;
 }
 .smaller-text {
-  padding-right: 1.5rem;
+  padding-right: 2rem;
   font-weight: 300;
 }
 
@@ -306,48 +373,6 @@ p {
   padding-bottom: 3px;
 }
 
-.column30 {
-  max-width: 90%;
-}
-
-@media (min-width: 580px) {
-  .column30 {
-    max-width: 30%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-inline-start: 1rem;
-  }
-}
-
-.column60 {
-  width: 90%;
-}
-
-@media (min-width: 845px) {
-  .column60 {
-    max-width: 60%;
-  }
-}
-
-/* @media (max-width: 780px){
- 
-    margin-left: auto;
-    margin-right: auto;
-  }
-} */
-
-.cnt {
-  text-align: center;
-}
-.btm {
-  margin-bottom: 3rem;
-}
-.btm2 {
-  margin-bottom: 0.5rem;
-}
-.bold {
-  font-weight: 800;
-}
 
 /*How it works*/
 .issues-list,
@@ -355,7 +380,9 @@ p {
   font-size: 1.6rem;
   line-height: 1.7;
 }
-
+issues-list{
+  margin-left: 5rem;
+}
 @media (min-width: 780px) {
   .issues-list {
     margin-left: 0;
@@ -383,10 +410,8 @@ figcaption {
 .individual-counselling-text {
   padding-top: 2rem;
 }
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+.education {
+  padding-top: 2rem;
 }
 
 .wide {
@@ -398,43 +423,20 @@ figcaption {
     width: 100%;
   }
 }
-@media (max-width: 750px) {
-  .row {
-    display: block;
-    width: 100%;
-  }
-}
 
-.two-thirds {
-  width: 70%;
-}
-@media (max-width: 770px) {
-  .two-thirds {
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
-.card {
+.contact-card {
   text-align: center;
-  /* max-width: 300px; */
   width: 280px;
-  /* max-width: 450px; */
   height: auto;
   flex-grow: 0.3;
   flex-shrink: 0;
   margin: 3rem auto;
-  /*   border: 1px solid coral; */
   padding: 2rem 1rem 1rem 1rem;
   font-size: 1.7rem;
   background-color: white;
   box-shadow: 0 1px 0 #db4a0d7d, 0 4px 6px #db4a0d7a;
 }
-.text-middle {
-  margin-top: auto;
-  margin-bottom: auto;
-}
+
 .text-white {
   color: white;
   background-image: url("photo-1470115636492-6d2b56f9146d.jpeg");
@@ -464,11 +466,11 @@ figcaption {
   font-weight: 300;
 }
 .uppercase::after {
-  content: ""; /* This is necessary for the pseudo element to work. */
-  display: block; /* This will put the pseudo element on its own line. */
-  margin: 0 auto; /* This will center the border. */
-  width: 50%; /* Change this to whatever width you want. */
-  padding-top: 0.6rem; /* This creates some space between the element and the border. */
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 60%;
+  padding-top: 0.6rem;
   margin-bottom: 1.5rem;
   border-bottom: 2px solid coral;
 }
@@ -493,40 +495,53 @@ figcaption {
   margin-block-end: 0;
 }
 
-.light {
-  font-weight: 300;
-}
 .footer-text {
   text-align: center;
   margin-top: -0.5rem;
   margin-bottom: 0;
   padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-bottom: 5rem;
   background-color: coral;
   color: white;
   font-size: 0.9rem;
 }
 
-.top {
-  padding-top: 5rem;
-}
-
-.top2 {
-  justify-content: space-around;
-}
-.half {
-  max-width: 45%;
-
-  padding: 1rem;
-}
-@media (max-width: 650px) {
-  .half {
-    max-width: 100%;
-    padding: 0;
-  }
-}
 
 #langs {
   color: purple;
   background-color: plum;
+}
+/* Utilities */
+.top {
+  padding-top: 5rem;
+}
+
+.top-fullscreen{
+  padding-top: 0;
+}
+@media(min-width: 770px){
+  .top-fullscreen{
+    padding-top: 5rem;
+  }
+}
+
+.cnt {
+  text-align: center;
+}
+
+.btm {
+  margin-bottom: 3rem;
+}
+.btm2 {
+  margin-bottom: 0.5rem;
+}
+.light {
+  font-weight: 300;
+}
+
+.bold {
+  font-weight: 800;
+}
+.hightlight {
+  background-color: #ffe8de;
 }
