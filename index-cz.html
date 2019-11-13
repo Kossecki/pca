@@ -29,32 +29,37 @@
                 </div>
                 <div class="navbar-menu-box">
                     <button id="mobile" class="accordion">menu</button>
-                    <ul id="list" class="menu-box-list hidden bold">
+                    <div id="list" class="menu-box-list hidden bold">
+                      <ul>
                         <li class="menu-item"><a href="#intro">Úvod</a></li>
                         <li class="menu-item"><a href="#counselling">Terapie</a></li>
                         <li class="menu-item"><a href="#about">O mně</a></li>
                         <li class="menu-item"><a href="#price">Cena</a></li>
                         <li class="menu-item"><a href="#contact">Kontakt</a></li>
-                        <div class="langs-menu">
+                      </ul>
+                        <ul class="langs-menu">
                             <li class="menu-item"><a href="index-de.html">Deutsch</a></li>
                             <li class="menu-item"><a href="index-en.html">English</a></li>
                             <li class="menu-item"><a href="index-sk.html">Slovensky</a></li>
-                        </div>
-                    </ul>
+                        </ul>
+                    </div>
                 </div>
-                <ul class="navbar-list">
-                    <li class="navbar-list-item"><a href="#counselling">Terapie</li></a>
-                    <li class="navbar-list-item"><a href="#about">O mně</a></li>
-                    <li class="navbar-list-item"><a href="#price">Cena</a></li>
-                    <li class="navbar-list-item"><a href="#contact">Kontakt</a></li>
-                    <ul id="langs" class="langs-switcher">
-                            <li data-value="sk" class="navbar-list-item-lang light" id="active"><a href="#" class="default-lang"><i class="fa fa-globe" aria-hidden="true"></i>Česky <!-- <i class="fa fa-caret-down" aria-hidden="true"></i> --></li></a>
-                            <div id="langs-switcher_options" class="langs-switcher_options hidden">
-                                <li data-value="en" class="navbar-list-item-lang"><a href="index-en.html"><i class="fa fa-globe" aria-hidden="true"></i>English <!-- <i class="fa fa-caret-down" aria-hidden="true"></i> --></li></a>
-                                <li data-value="de" class="navbar-list-item-lang"><a href="index-de.html"><i class="fa fa-globe" aria-hidden="true"></i>Deutsch <!-- <i class="fa fa-caret-down" aria-hidden="true"></i> --></li></a>
-                                <li data-value="de" class="navbar-list-item-lang"><a href="index-sk.html"><i class="fa fa-globe" aria-hidden="true"></i>slovensky <!-- <i class="fa fa-caret-down" aria-hidden="true"></i> --></li></a>
-                            </div>
-                </ul>
+                <div class="navbar-options">
+                  <ul class="navbar-list">
+                      <li class="navbar-list-item"><a href="#counselling">Terapie</a></li>
+                      <li class="navbar-list-item"><a href="#about">O mně</a></li>
+                      <li class="navbar-list-item"><a href="#price">Cena</a></li>
+                      <li class="navbar-list-item"><a href="#contact">Kontakt</a></li>
+                  </ul>
+                      <div id="langs" class="langs-switcher">
+                              <span data-value="cz" class="navbar-list-item-lang" id="active"><a href="#" class="default-lang"><i class="fa fa-globe" aria-hidden="true"></i>Česky</a></span>
+                              <ul id="langs-switcher-options" class="langs-switcher_options hidden">
+                                  <li data-value="en" class="navbar-list-item-lang"><a href="index-en.html"><i class="fa fa-globe" aria-hidden="true"></i>English</a></li>
+                                  <li data-value="de" class="navbar-list-item-lang"><a href="index-de.html"><i class="fa fa-globe" aria-hidden="true"></i>Deutsch</a></li>
+                                  <li data-value="sk" class="navbar-list-item-lang"><a href="index-sk.html"><i class="fa fa-globe" aria-hidden="true"></i>slovensky</a></li>
+                              </ul>
+                  </div>
+                </div>
             </nav>
     </header>
 
@@ -63,17 +68,17 @@
         <section class="container top btm" id="intro">
             <h1 class="main-title">Rogersovská psychoterapie</h1>
             <div class="row">
-                <div class="third">
+                <div class="column30">
                     <p class="uppercase">Vítejte</p>
-                    <img src="martin-latest.png" class="portrait" alt="Martin Užák's face in front view">
+                    <img src="martin-latest.png" class="portrait portrait-fullscreen" alt="Martin Užák's face in front view">
                 </div>
-                <div class="two-thirds">
+                <div class="column70">
                     <p class="portrait-text bold">Jmenuji se Martin Užák a poskytuji psychoterapeutické poradenství v Praze.</p>
                     <p>Někdy se stává, že sami neumíme vyřešit naše duševní obtíže. Tehdy není hanba vyhledat pomoc. Ba právě naopak, včasná terapie může ušetřit člověka od zbytečného trápení.</p>
                     <p>Terapie je cestou práce na sobě a umožňuje změnit sebe i svět - to, jak jej prožíváme. Tím se obnovuje sebedůvěra a radost ze života.</p>
                 </div>
             </div>
-            <a href="#contact"><button class="appt-intl"><span>Objednajte si skúšobné stretnutie</span></button></a>
+            <div class="appt-intl"><a href="#contact"><span>Objednajte si skúšobné stretnutie</span></a></div>
         </section>
 
     <section class="individual-counselling">
@@ -85,10 +90,10 @@
         <!--Person Centred Approach to Counselling-->
     <article class="container top" id="counselling">
         <div class="row">
-            <div class="third">
+            <div class="column30">
                 <h3>Terapie zaměřená na člověka: PCA přístup</h3>
             </div>
-            <div class="two-thirds">
+            <div class="column70">
                 <p>Na člověka zaměřená terapie je označována také jako PCA přístup (z anglického Person Centered Approach) a řadí se k humanistické psychologii. Tento přístup byl vyvinut v USA v 50. letech 20. století Carlem R. Rogersem.</p>
                   <p>V té době se jednalo o revoluci, protože Rogers se odmítl stavět do pozice experta na klientův život. Místo toho se snažil mít člověka rád a porozumět mu. Proto i název "na člověka zaměřený přístup". <span class="hightlight">Rogers viděl v samotném klientovi nejlepšího experta na jeho vlastní život. </span>
                 </p>
@@ -98,10 +103,10 @@
             </div>
         </div>
             <div class="row">
-                <div class="third">
+                <div class="column30">
                     <h3 class="uppercase">Jak to funguje</h3>
                 </div>
-                <div class="two-thirds">
+                <div class="column70">
                     <p>Tolik teorie. Konkrétně to funguje tak, že přinášíte svá témata, tedy myšlenky, pocity, strachy a cokoli, co Vás tíží. Já Vám při tom pozorně naslouchám. Nesoudím, nenálepkuji a nevystavuji diagnózy. A také neradím.</p>
                     <p>Namísto toho je mým cílem citlivě pochopit to, co přinášíte. Pokud se mi to podaří, je moje a i Rogersova zkušenost, že to umožňuje <span class="hightlight">strávit nezpracované zážitky a znovu nabýt důvěru k sobě a životu.</span> Diskrétnost je přitom samozřejmostí.</p>
                 </div>
@@ -110,8 +115,8 @@
     <section class="issues">
         <div class="container top">
             <h3 class="uppercase">Na terapii můžete přijít s jakýmkoliv problémem, klasická témata jsou například</h3>
-            <ul class="ls-lh row top2">
-                <div class="half">
+            <div class="issues-list row top2">
+                <ul class="column-issues">
                     <li>problémy ve vztazích</li>
                     <li>ztráta smyslu života</li>
                     <li>závislosti</li>
@@ -119,8 +124,8 @@
                     <li>pocit méněcennosti</li>
                     <li>pocity úzkosti</li>
                     <li>prokastrinace</li>
-                </div>
-                <div class="half">
+                </ul>
+                <ul class="column-issues">
                     <li>problémy s autoritami</li>
                     <li>stres a vyhoření</li>
                     <li>osamocenost</li>
@@ -128,11 +133,11 @@
                     <li>pocity viny </li>
                     <li>problémy se spánkem </li>
                     <li>traumata a krize</li>
-                </div>
-            </ul>
-            <div class="row">
+                </ul>
+            </div>
                 <h3 class="uppercase wide">Terapie umí také pomoci, pokud Vám jde o osobnostní rozvoj</h3>
-                    <ul class="ls-lh">
+                <div class="column0issues column-issues-narrow">
+                    <ul class="issues-list">
                         <li>seberealizace</li>
                         <li>vylepšení vztahů </li>
                         <li>komunikace </li>
@@ -143,13 +148,14 @@
 
 <!---About-->
     <section id="about">
-        <div class="top container btm">
-            <div class="row">
-                <div class="third smaller-text">
+      <img src="martin-latest.png" class="portrait portrait-mobile top" alt="Martin Užák's face in front view" />
+        <div class="container btm">
+            <div class="row top-fullscreen">
+                <div class="column30 smaller-text">
                     <h2>O mně</h2>
                     <p class="smaller-text">Narodil jsem se v roce 1983 v Bratislavě, kde jsem i vyrůstal. Později jsem žil a studoval ve Vídni nejprve informatiku a potom psychologii. Nyní působím v Praze.</p>
                 </div>
-                <div class="two-thirds">
+                <div class="column70">
                     <h3 class="top-b">Proč jsem se rozhodl stát terapeutem</h3>
                     <p>Zažil jsem, jaký obrat způsobila terapie v mém životě. Až do třicítky jsem si celkem úspěšně budoval kariéru v IT. Pak mě ale životní krize v podobě zlomeného srdce donutila začít hledat&hellip;</p>
                     <p>A nakonec to byla právě psychoterapie, která mi změnila pohled na život. Uvědomil jsem si při ní, že život je v pořádku, tak jak je. Krása tohoto uvědomění byla, že se jednalo o praktickou zkušenost, tedy zážitek a ne jen slova.</p>
@@ -163,7 +169,7 @@
         <div class="education">
             <div class="container column60">
                 <h3 class="top cnt uppercase">Vzdělání</h3>
-                <ul class="ls-lh">
+                <ul class="education-list">
                     <li class="btm2">2015—2019 <span class="bold">PCA institut Praha</span>, komplexní výcvikový program v psychoterapii a poradenství zaměřeném na člověka</li>
                     <li class="btm2">2015—2019 <span class="bold">PCA institut Praha</span> výcvik v relaxačních technikách - Schultzův autogenní trénink</li>
                     <li class="btm2">2014—2016 <span class="bold">Univerzita Vídeň,</span> psychologie (nedokončené) </li>
@@ -188,32 +194,33 @@
 
 <!-- Contact Section-->
     <section class="contact top" id="contact">
-        <div class="column60">
-            <h3 class="nct">Kontakt</h3>
+        <div class="container column60">
+            <h3 class="cnt">Kontakt</h3>
             <p>Terapii poskytuji v <a href="http://www.avasa.cz/cz/kontakt" class="hightlight">Centru Avasa</a>, Křižíkova 308/19, Praha 8. Je to blízko stanice metra B/C Florenc.</p>
   <!--             <p>My working hours are Monday 9:00–17:00, Tuesday to Friday 9:00–20:00.</p> -->
             <p>Pokud nezvedám telefon, je možné, že právě poskytuji terapii. V tom případě zkuste zavolat později nebo mi napište mail.</p>
         </div>
         <div class="row">
-            <div class="card cnt">
+            <div class="contact-card cnt">
                 <a class="contact-icon" href="#">
                     <p><span class="uppercase">E-mail</span>
                         <i class="fa fa-envelope-open-o" aria-hidden="true"></i>
                         martin.uzak@gmail.com</p>
                 </a>
             </div>
-            <div class="card cnt">
+            <div class="contact-card cnt">
                 <a href="https://goo.gl/maps/v56Ng7rJSUBt8yDP7">
                     <p><span class="uppercase">Adresa</span>Křižíkova 308/19, 186 00 Praha 8 - Karlín</p>
                 </a>
             </div>
         
-            <div class="card cnt">
+            <div class="contact-card cnt">
                 <a href="tel:+420775966121">
                     <p><span class="uppercase">Telefon</span><i class="fa fa-phone" aria-hidden="true"></i>+420 775 966 121
                     </p>
                 </a>
             </div>
+        </div>
     </section>
 </main>
 <!-- Footer -->
