@@ -243,16 +243,18 @@ ul {
 }
 
 .langs-switcher {
-display: flex;
-flex-direction: column;
-align-self: flex-end;
-  padding-inline-start: 0.5rem;
-  margin-right: 0.5rem;
   list-style: none;
+  padding-left: 1rem;
+  width: 9.5rem;
 }
 
 .langs-switcher-options{
   display: block;
+  position: absolute;
+  width: 9.5rem;
+  margin-left: -1rem;
+  padding-left: 1rem;
+  background-color: coral;
 
 }
 /* Main */
@@ -495,11 +497,11 @@ issues-list{
   font-size: 0.9rem;
 }
 
-
 #langs {
   color: purple;
   background-color: plum;
 }
+
 /* Utilities */
 .top {
   padding-top: 5rem;
@@ -533,4 +535,8 @@ issues-list{
 }
 .hightlight {
   background-color: #ffe8de;
+}
+
+.margin-standard-top {
+  margin-top: 2.5rem;
 }
