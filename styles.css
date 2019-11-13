@@ -388,17 +388,6 @@ issues-list{
     margin-left: 0;
   }
 }
-/*About me*/
-.about-me {
-  margin-bottom: 3rem;
-}
-figure {
-  margin-left: 0;
-  margin-right: 0;
-}
-figcaption {
-  font-size: 0.6rem;
-}
 
 .individual-counselling,
 .issues,
