@@ -1,7 +1,7 @@
 <?php
 
-$supported_langs = array("en", "cz", "sk", "de");
-$default_lang = "cz";
+$supported_langs = array("en", "cs", "sk", "de");
+$default_lang = "cs";
 
 $accept_lang = $_SERVER["HTTP_ACCEPT_LANGUAGE"];
 $lang = substr($accept_lang, 0, 2);
