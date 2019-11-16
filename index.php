@@ -10,5 +10,11 @@ if (!in_array($lang , $supported_langs)) {
     $lang = $default_lang;
 } 
 
+/*
+if ($lang == "en") {
+    $lang = "cs";
+}
+ */
+
 header("location: index-$lang.html");
 ?>
