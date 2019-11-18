@@ -257,6 +257,7 @@ ul {
   list-style: none;
   padding-left: 1rem;
   width: 9.5rem;
+  cursor: pointer;
 }
 
 .langs-switcher-options{
