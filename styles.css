@@ -561,3 +561,6 @@ issues-list{
 .margin-standard-top {
   margin-top: 2.5rem;
 }
+.hover-dark:hover{
+  color: purple;
+}
