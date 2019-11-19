@@ -36,12 +36,12 @@ a {
 }
 
 a:hover {
-  color: purple;
+  color: white;
   background-color: plum;
 }
 
 a:active {
-  color: white;
+  color: purple;
 }
 
 ul {
@@ -247,8 +247,8 @@ ul {
 
 .navbar-list-item-lang {
   display: block;
-  font-size: 1rem;
-  line-height: 1.4;
+  font-size: 1.2rem;
+  line-height: 1.7;
   text-transform: uppercase;
   font-weight: 600;
 }
@@ -264,20 +264,23 @@ ul {
   color: purple;
   background-color: plum;
   padding-left: 1rem;
-  margin-left: -1rem;
+  margin-left: -1.5rem;
 }
 #active::after {
   content: "\f0d7";
   font-family: "fontawesome";
-  font-size: 1rem;
+  font-size: 1.4rem;
   margin-left: 0.5rem;
 }
 
+#active:hover{
+  color: white;
+}
 .langs-switcher-options{
   display: block;
   position: absolute;
-  width: 9.5rem;
-  margin-left: -1rem;
+  width: 10rem;
+  margin-left: -1.5rem;
   padding-left: 1rem;
   background-color: coral;
 
