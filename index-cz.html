@@ -1,42 +1,48 @@
 <!DOCTYPE html>
 <html lang="cs">
+    <head>
+        <meta charset="utf-8" />
+        <title>Psychoterapeutické poradenství Praha</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta
+            name="description"
+            content="Rogersovská psychoterapie v Praze. Pomoc při duševních potížích. Osobnostní rozvoj. Kontakt: +420 775 966 121"
+        />
+        <link
+            href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400,500,700&display=swap&subset=latin-ext"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css" />
+        <link href="normalize.css" rel="stylesheet" />
+        <link href="styles.css" rel="stylesheet" />
+    </head>
 
-  <head>
-    <meta charset="utf-8" />
-    <title>Psychoterapeutické poradenství Praha</title>
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta
-      name="description"
-      content="Rogersovská psychoterapie v Praze. Pomoc při duševních potížích. Osobnostní rozvoj. Kontakt: +420 775 966 121"
-    />
-    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400,500,700&display=swap&subset=latin-ext" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
-    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
-    <link href="normalize.css" rel="stylesheet">
-    <link href="styles.css" rel="stylesheet">
-  </head>
-
-
-  <body>
-    <header>
+    <body>
+        <header>
             <nav id="navbar" class="navbar">
                 <div class="navbar-description">
-                    <a href="#intro"><p class="nav-uppercase bold"> Psychoterapeutické poradenství<span class="nav-uppercase light"> Praha</span></p><p class="nav-text">Dipl.-Ing. Martin Užák</p></a>
+                    <a href="#intro"
+                        ><p class="nav-uppercase bold">
+                            Psychoterapeutické poradenství<span class="nav-uppercase light"> Praha</span>
+                        </p>
+                        <p class="nav-text">Dipl.-Ing. Martin Užák</p></a
+                    >
                 </div>
                 <div class="navbar-menu-box">
-                    <button id="mobile" class="accordion">menu</button>
-                    <div id="list" class="menu-box-list hidden bold">
-                      <ul>
-                        <li class="menu-item"><a href="#intro">Úvod</a></li>
-                        <li class="menu-item"><a href="#counselling">Terapie</a></li>
-                        <li class="menu-item"><a href="#about">O mně</a></li>
-                        <li class="menu-item"><a href="#price">Cena</a></li>
-                        <li class="menu-item"><a href="#contact">Kontakt</a></li>
-                      </ul>
+                    <button class="accordion">menu</button>
+                    <div class="menu-box-list bold" data-state="closed">
+                        <ul>
+                            <li class="menu-item"><a href="#intro">Úvod</a></li>
+                            <li class="menu-item"><a href="#counselling">Terapie</a></li>
+                            <li class="menu-item"><a href="#about">O mně</a></li>
+                            <li class="menu-item"><a href="#price">Cena</a></li>
+                            <li class="menu-item"><a href="#contact">Kontakt</a></li>
+                        </ul>
                         <ul class="langs-menu">
                             <li class="menu-item"><a href="index-de.html">Deutsch</a></li>
                             <li class="menu-item"><a href="index-en.html">English</a></li>
@@ -45,190 +51,314 @@
                     </div>
                 </div>
                 <div class="navbar-options">
-                  <ul class="navbar-list">
-                      <li class="navbar-list-item"><a href="#counselling">Terapie</a></li>
-                      <li class="navbar-list-item"><a href="#about">O mně</a></li>
-                      <li class="navbar-list-item"><a href="#price">Cena</a></li>
-                      <li class="navbar-list-item"><a href="#contact">Kontakt</a></li>
-                  </ul>
-                      <div id="langs" class="langs-switcher">
-                              <span data-value="cs" class="navbar-list-item-lang default-lang" id="active">Česky</span>
-                              <ul id="langs-switcher-options" class="langs-switcher-options hidden">
-                                  <li data-value="en" class="navbar-list-item-lang"><a href="index-en.html">English</a></li>
-                                  <li data-value="de" class="navbar-list-item-lang"><a href="index-de.html">Deutsch</a></li>
-                                  <li data-value="sk" class="navbar-list-item-lang"><a href="index-sk.html">Slovensky</a></li>
-                              </ul>
-                  </div>
+                    <ul class="navbar-list">
+                        <li class="navbar-list-item"><a href="#counselling">Terapie</a></li>
+                        <li class="navbar-list-item"><a href="#about">O mně</a></li>
+                        <li class="navbar-list-item"><a href="#price">Cena</a></li>
+                        <li class="navbar-list-item"><a href="#contact">Kontakt</a></li>
+                    </ul>
+                    <div id="langs" class="langs-switcher">
+                        <span data-value="cs" class="navbar-list-item-lang default-lang" id="active">Česky</span>
+                        <ul class="langs-switcher-options" data-state="closed">
+                            <li data-value="en" class="navbar-list-item-lang"><a href="index-en.html">English</a></li>
+                            <li data-value="de" class="navbar-list-item-lang"><a href="index-de.html">Deutsch</a></li>
+                            <li data-value="sk" class="navbar-list-item-lang"><a href="index-sk.html">Slovensky</a></li>
+                        </ul>
+                    </div>
                 </div>
             </nav>
-    </header>
+        </header>
 
-<main>
-<!-- Introduction -->
-        <section class="container top btm" id="intro">
-            <h1 class="main-title">Rogersovská psychoterapie</h1>
-            <div class="row">
-                <div class="column30">
-                    <p class="uppercase">Vítejte</p>
-                    <img src="martin-latest.png" class="portrait portrait-fullscreen" alt="Martin Užák's face in front view">
+        <main>
+            <!-- Introduction -->
+            <section class="container top btm" id="intro">
+                <h1 class="main-title">Rogersovská psychoterapie</h1>
+                <div class="row">
+                    <div class="column30">
+                        <p class="uppercase">Vítejte</p>
+                        <img
+                            src="martin-latest.png"
+                            class="portrait portrait-fullscreen"
+                            alt="Martin Užák's face in front view"
+                        />
+                    </div>
+                    <div class="column70">
+                        <p class="portrait-text bold">
+                            Jmenuji se Martin Užák a poskytuji psychoterapeutické poradenství v Praze.
+                        </p>
+                        <p>
+                            Někdy se stává, že sami neumíme vyřešit naše duševní obtíže. Tehdy není hanba vyhledat
+                            pomoc. Ba právě naopak, včasná terapie může ušetřit člověka od zbytečného trápení.
+                        </p>
+                        <p>
+                            Terapie je cestou práce na sobě a umožňuje změnit sebe i svět - to, jak jej prožíváme. Tím
+                            se obnovuje sebedůvěra a radost ze života.
+                        </p>
+                    </div>
                 </div>
-                <div class="column70">
-                    <p class="portrait-text bold">Jmenuji se Martin Užák a poskytuji psychoterapeutické poradenství v Praze.</p>
-                    <p>Někdy se stává, že sami neumíme vyřešit naše duševní obtíže. Tehdy není hanba vyhledat pomoc. Ba právě naopak, včasná terapie může ušetřit člověka od zbytečného trápení.</p>
-                    <p>Terapie je cestou práce na sobě a umožňuje změnit sebe i svět - to, jak jej prožíváme. Tím se obnovuje sebedůvěra a radost ze života.</p>
+                <div class="appt-intl">
+                    <a href="#contact"><span>Objednejte si zkušební setkání</span></a>
                 </div>
-            </div>
-            <div class="appt-intl"><a href="#contact"><span>Objednejte si zkušební setkání</span></a></div>
-        </section>
+            </section>
 
-    <section class="individual-counselling">
-            <div class="container column60 individual-counselling-text">
-                <h3 class="wide uppercase">Individuální terapie</h3>
-                <p>Nejčastější formou terapie je individuální terapie. Je to striktně důvěrný rozhovor mezi klientem a terapeutem na témata, která přináší klient a kterým se společně snaží porozumět.</p>
-                <p>Obvykle se setkávají jednou týdně na 50 minut. Délka celkové terapie je individuální a závisí na potřebách klienta.</p>
-            </div>
-    </section>
-        <!--Person Centred Approach to Counselling-->
-    <article class="container top" id="counselling">
-        <div class="row">
-            <div class="column30">
-                <h3>Terapie zaměřená na člověka: PCA přístup</h3>
-            </div>
-            <div class="column70">
-                <p>Na člověka zaměřená terapie je označována také jako PCA přístup (z anglického Person Centered Approach) a řadí se k humanistické psychologii. Tento přístup byl vyvinut v USA v 50. letech 20. století Carlem R. Rogersem.</p>
-                  <p>V té době se jednalo o revoluci, protože Rogers se odmítl stavět do pozice experta na klientův život. Místo toho se snažil mít člověka rád a porozumět mu. Proto i název "na člověka zaměřený přístup". <span class="hightlight">Rogers viděl v samotném klientovi nejlepšího experta na jeho vlastní život. </span>
-                </p>
-                <p>Teorie PCA ve zkratce hovoří o tom, že každý živý organismus má v sobě program růstu. V ideálním prostředí se tak organismus sám od sebe tělesně i duševně optimálně rozvíjí. Pokud je však program z nějakého důvodu narušený a organismus se nemůže přirozeně rozvíjet, nastávají poruchy.</p>
-                <p>Cílem terapie je vytvořit <span class="hightlight">psychicky a fyzicky bezpečné prostředí, kde se klient bude moci na své problémy podívat otevřeně, bez společenských masek.</span></p>
-                <p>Rogers zjistil, že pokud terapeut dokáže vytvořit takové prostředí, ve kterém bezpodmínečně přijímá klienta a jeho témata, je při tom empatický a autentický (sám se neskrývá za nějakou maskou), <span class="hightlight">nastává automatická "oprava" programu.</span></p>
-            </div>
-        </div>
-            <div class="row">
-                <div class="column30">
-                    <h3 class="uppercase">Jak to funguje</h3>
-                </div>
-                <div class="column70">
-                    <p>Tolik teorie. Konkrétně to funguje tak, že přinášíte svá témata, tedy myšlenky, pocity, strachy a cokoli, co Vás tíží. Já Vám při tom pozorně naslouchám. Nesoudím, nenálepkuji a nevystavuji diagnózy. A také neradím.</p>
-                    <p>Namísto toho je mým cílem citlivě pochopit to, co přinášíte. Pokud se mi to podaří, je moje a i Rogersova zkušenost, že to umožňuje <span class="hightlight">strávit nezpracované zážitky a znovu nabýt důvěru k sobě a životu.</span> Diskrétnost je přitom samozřejmostí.</p>
-                </div>
-            </div>
-    </article>
-    <section class="issues">
-        <div class="container top">
-            <h3 class="uppercase">Na terapii můžete přijít s jakýmkoliv problémem, klasická témata jsou například</h3>
-            <div class="issues-list row top2">
-                <ul class="column-issues">
-                    <li>problémy ve vztazích</li>
-                    <li>ztráta smyslu života</li>
-                    <li>závislosti</li>
-                    <li>neschopnost říci "ne"</li>
-                    <li>pocit méněcennosti</li>
-                    <li>pocity úzkosti</li>
-                    <li>prokastrinace</li>
-                </ul>
-                <ul class="column-issues">
-                    <li>problémy s autoritami</li>
-                    <li>stres a vyhoření</li>
-                    <li>osamocenost</li>
-                    <li>strach ze smrti </li>
-                    <li>pocity viny </li>
-                    <li>problémy se spánkem </li>
-                    <li>traumata a krize</li>
-                </ul>
-            </div>
-                <h3 class="uppercase wide margin-standard-top">Terapie umí také pomoci, pokud Vám jde o osobnostní rozvoj</h3>
-                <div class="column-issues column-issues-narrow">
-                    <ul class="issues-list">
-                        <li>seberealizace</li>
-                        <li>vylepšení vztahů </li>
-                        <li>komunikace </li>
-                    </ul>
-                </div>
-        </div>
-    </section>
-
-<!---About-->
-    <section id="about">
-      <img src="martin-latest.png" class="portrait portrait-mobile top" alt="Martin Užák's face in front view" />
-        <div class="container btm">
-            <div class="row top-fullscreen">
-                <div class="column30 smaller-text">
-                    <h2>O mně</h2>
-                    <p class="smaller-text">Narodil jsem se v roce 1983 v Bratislavě, kde jsem i vyrůstal. Později jsem žil a studoval ve Vídni nejprve informatiku a potom psychologii. Nyní působím v Praze.</p>
-                </div>
-                <div class="column70">
-                    <h3 class="top-b">Proč jsem se rozhodl stát terapeutem</h3>
-                    <p>Zažil jsem, jaký obrat způsobila terapie v mém životě. Až do třicítky jsem si celkem úspěšně budoval kariéru v IT. Pak mě ale životní krize v podobě zlomeného srdce donutila začít hledat&hellip;</p>
-                    <p>A nakonec to byla právě psychoterapie, která mi změnila pohled na život. Uvědomil jsem si při ní, že život je v pořádku, tak jak je. Krása tohoto uvědomění byla, že se jednalo o praktickou zkušenost, tedy zážitek a ne jen slova.</p>
-                    <p>Tehdy jsem našel své nové povolání. Dal jsem se na studium psychologie a na stejný výcvik, ve kterém jsem absolvoval terapii - PCA.</p>
-                    <p>Ze školy jsem odešel po třech semestrech. Cítil jsem, že více teorie mi neumožní být lidštějším, a tím pádem lepším terapeutem. Pokračoval jsem už jen ve výcviku, který jsem ukončil v roce 2019.</p>
-                    <h3 class="top-b">Co se mi líbí na terapii</h3>
-                    <p>Líbí se mi, jak umí být terapie <span class="hightlight">účinná</span> a že je <span class="hightlight">praktická.</span> Líbí se mi také, že mohu <span class="hightlight">pracovat s lidmi a spolu můžeme obnovovat důvěru k tomu zázraku zvanému život, a dále tak mohu dávat to, co mi tak pozitivně a radikálně ovlivnilo život.</span></p>
-                </div>
-            </div>
-        </div>
-        <div class="education">
-            <div class="container column60">
-                <h3 class="top cnt uppercase">Vzdělání</h3>
-                <ul class="education-list">
-                    <li class="btm2">2015—2019 <span class="bold">PCA institut Praha</span>, komplexní výcvikový program v psychoterapii a poradenství zaměřeném na člověka</li>
-                    <li class="btm2">2015—2019 <span class="bold">PCA institut Praha</span> výcvik v relaxačních technikách - Schultzův autogenní trénink</li>
-                    <li class="btm2">2014—2016 <span class="bold">Univerzita Vídeň,</span> psychologie (nedokončené) </li>
-                    <li class="btm2">2002—2009 <span class="bold">Technická univerzita Vídeň,</span> magisterské studium informatiky, dosažený titul Dipl.-Ing.</li>
-                    <li class="btm2">1997—2002 <span class="bold">Obchodní akademie Neusiedl/See</span></li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-<!--Price Section-->
-    <section class="top container column60 btm" id="price">
-        <h3 class="cnt">Ceník a podmínky</h3>
-        <p><span class="hightlight">První setkání 400 CZK / 50 minut, následující setkání 800 CZK / 50 minut.</span></p>
-        <p>Pracuji pouze na přímou úhradu. To znamená, že si hradíte celou částku sami. Má to výhodu, že nikde nejsou vedeny záznamy o vaší terapii. Také umím obvykle poskytnout kratší čekací časy na termín než psychoterapeuti, kteří mají smluvní vztah se zdravotními pojišťovnami.</p>
-        <p>Pokud se rozhodnete zrušit dohodnuté setkání, udělejte to do 24 hodin před ním, jinak Vám budu účtovat plnou cenu setkání.</p>
-        <h4 class="uppercase">Jazyky</h4>
-        <p class="cnt">Terapii poskytuji ve slovenštině (česky rozumím), němčině nebo angličtině.</p>
-        <h4 class="uppercase">Etický kodex</h4>
-        <p class="cnt">Při práci se řídím etickým kodexem České asociace pro psychoterapii (ČAP) a absolvuji pravidelné supervize.</p>
-    </section>
-
-<!-- Contact Section-->
-    <section class="contact top" id="contact">
-        <div class="container column60">
-            <h3 class="cnt">Kontakt</h3>
-            <p>Terapii poskytuji v <a href="http://www.avasa.cz/cz/kontakt" class="hightlight">Centru Avasa</a>, Křižíkova 308/19, Praha 8. Je to blízko stanice metra B/C Florenc.</p>
-  <!--             <p>My working hours are Monday 9:00–17:00, Tuesday to Friday 9:00–20:00.</p> -->
-            <p>Pokud nezvedám telefon, je možné, že právě poskytuji terapii. V tom případě zkuste zavolat později nebo mi napište mail.</p>
-        </div>
-        <div class="row">
-            <div class="contact-card cnt">
-                <a class="hover-dark" href="#">
-                    <p><span class="uppercase">E-mail</span>
-                        <i class="fa fa-envelope-open-o" aria-hidden="true"></i>
-                        martin.uzak@gmail.com</p>
-                </a>
-            </div>
-            <div class="contact-card cnt">
-                <a href="https://goo.gl/maps/v56Ng7rJSUBt8yDP7" class="hover-dark">
-                    <p><span class="uppercase">Adresa</span>Křižíkova 308/19, 186 00 Praha 8 - Karlín</p>
-                </a>
-            </div>
-        
-            <div class="contact-card cnt">
-                <a href="tel:+420775966121" class="hover-dark">
-                    <p><span class="uppercase">Telefon</span><i class="fa fa-phone" aria-hidden="true"></i>+420 775 966 121
+            <section class="individual-counselling">
+                <div class="container column60 individual-counselling-text">
+                    <h3 class="wide uppercase">Individuální terapie</h3>
+                    <p>
+                        Nejčastější formou terapie je individuální terapie. Je to striktně důvěrný rozhovor mezi
+                        klientem a terapeutem na témata, která přináší klient a kterým se společně snaží porozumět.
                     </p>
-                </a>
-            </div>
-        </div>
-    </section>
-</main>
-<!-- Footer -->
-    <footer>
-        <p class="footer-text">Copyright © <span lang="sk">Martin Užák</span> 2019</p>
-    </footer>
-    <script type="text/javascript" src="collapse.js"></script>
-  </body>
+                    <p>
+                        Obvykle se setkávají jednou týdně na 50 minut. Délka celkové terapie je individuální a závisí na
+                        potřebách klienta.
+                    </p>
+                </div>
+            </section>
+            <!--Person Centred Approach to Counselling-->
+            <article class="container top" id="counselling">
+                <div class="row">
+                    <div class="column30">
+                        <h3>Terapie zaměřená na člověka: PCA přístup</h3>
+                    </div>
+                    <div class="column70">
+                        <p>
+                            Na člověka zaměřená terapie je označována také jako PCA přístup (z anglického Person
+                            Centered Approach) a řadí se k humanistické psychologii. Tento přístup byl vyvinut v USA v
+                            50. letech 20. století Carlem R. Rogersem.
+                        </p>
+                        <p>
+                            V té době se jednalo o revoluci, protože Rogers se odmítl stavět do pozice experta na
+                            klientův život. Místo toho se snažil mít člověka rád a porozumět mu. Proto i název "na
+                            člověka zaměřený přístup".
+                            <span class="hightlight"
+                                >Rogers viděl v samotném klientovi nejlepšího experta na jeho vlastní život.
+                            </span>
+                        </p>
+                        <p>
+                            Teorie PCA ve zkratce hovoří o tom, že každý živý organismus má v sobě program růstu. V
+                            ideálním prostředí se tak organismus sám od sebe tělesně i duševně optimálně rozvíjí. Pokud
+                            je však program z nějakého důvodu narušený a organismus se nemůže přirozeně rozvíjet,
+                            nastávají poruchy.
+                        </p>
+                        <p>
+                            Cílem terapie je vytvořit
+                            <span class="hightlight"
+                                >psychicky a fyzicky bezpečné prostředí, kde se klient bude moci na své problémy podívat
+                                otevřeně, bez společenských masek.</span
+                            >
+                        </p>
+                        <p>
+                            Rogers zjistil, že pokud terapeut dokáže vytvořit takové prostředí, ve kterém bezpodmínečně
+                            přijímá klienta a jeho témata, je při tom empatický a autentický (sám se neskrývá za nějakou
+                            maskou), <span class="hightlight">nastává automatická "oprava" programu.</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column30">
+                        <h3 class="uppercase">Jak to funguje</h3>
+                    </div>
+                    <div class="column70">
+                        <p>
+                            Tolik teorie. Konkrétně to funguje tak, že přinášíte svá témata, tedy myšlenky, pocity,
+                            strachy a cokoli, co Vás tíží. Já Vám při tom pozorně naslouchám. Nesoudím, nenálepkuji a
+                            nevystavuji diagnózy. A také neradím.
+                        </p>
+                        <p>
+                            Namísto toho je mým cílem citlivě pochopit to, co přinášíte. Pokud se mi to podaří, je moje
+                            a i Rogersova zkušenost, že to umožňuje
+                            <span class="hightlight"
+                                >strávit nezpracované zážitky a znovu nabýt důvěru k sobě a životu.</span
+                            >
+                            Diskrétnost je přitom samozřejmostí.
+                        </p>
+                    </div>
+                </div>
+            </article>
+            <section class="issues">
+                <div class="container top">
+                    <h3 class="uppercase">
+                        Na terapii můžete přijít s jakýmkoliv problémem, klasická témata jsou například
+                    </h3>
+                    <div class="issues-list row top2">
+                        <ul class="column-issues">
+                            <li>problémy ve vztazích</li>
+                            <li>ztráta smyslu života</li>
+                            <li>závislosti</li>
+                            <li>neschopnost říci "ne"</li>
+                            <li>pocit méněcennosti</li>
+                            <li>pocity úzkosti</li>
+                            <li>prokastrinace</li>
+                        </ul>
+                        <ul class="column-issues">
+                            <li>problémy s autoritami</li>
+                            <li>stres a vyhoření</li>
+                            <li>osamocenost</li>
+                            <li>strach ze smrti</li>
+                            <li>pocity viny</li>
+                            <li>problémy se spánkem</li>
+                            <li>traumata a krize</li>
+                        </ul>
+                    </div>
+                    <h3 class="uppercase wide margin-standard-top">
+                        Terapie umí také pomoci, pokud Vám jde o osobnostní rozvoj
+                    </h3>
+                    <div class="column-issues column-issues-narrow">
+                        <ul class="issues-list">
+                            <li>seberealizace</li>
+                            <li>vylepšení vztahů</li>
+                            <li>komunikace</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
 
+            <!---About-->
+            <section id="about">
+                <img
+                    src="martin-latest.png"
+                    class="portrait portrait-mobile top"
+                    alt="Martin Užák's face in front view"
+                />
+                <div class="container btm">
+                    <div class="row top-fullscreen">
+                        <div class="column30 smaller-text">
+                            <h2>O mně</h2>
+                            <p class="smaller-text">
+                                Narodil jsem se v roce 1983 v Bratislavě, kde jsem i vyrůstal. Později jsem žil a
+                                studoval ve Vídni nejprve informatiku a potom psychologii. Nyní působím v Praze.
+                            </p>
+                        </div>
+                        <div class="column70">
+                            <h3 class="top-b">Proč jsem se rozhodl stát terapeutem</h3>
+                            <p>
+                                Zažil jsem, jaký obrat způsobila terapie v mém životě. Až do třicítky jsem si celkem
+                                úspěšně budoval kariéru v IT. Pak mě ale životní krize v podobě zlomeného srdce donutila
+                                začít hledat&hellip;
+                            </p>
+                            <p>
+                                A nakonec to byla právě psychoterapie, která mi změnila pohled na život. Uvědomil jsem
+                                si při ní, že život je v pořádku, tak jak je. Krása tohoto uvědomění byla, že se jednalo
+                                o praktickou zkušenost, tedy zážitek a ne jen slova.
+                            </p>
+                            <p>
+                                Tehdy jsem našel své nové povolání. Dal jsem se na studium psychologie a na stejný
+                                výcvik, ve kterém jsem absolvoval terapii - PCA.
+                            </p>
+                            <p>
+                                Ze školy jsem odešel po třech semestrech. Cítil jsem, že více teorie mi neumožní být
+                                lidštějším, a tím pádem lepším terapeutem. Pokračoval jsem už jen ve výcviku, který jsem
+                                ukončil v roce 2019.
+                            </p>
+                            <h3 class="top-b">Co se mi líbí na terapii</h3>
+                            <p>
+                                Líbí se mi, jak umí být terapie <span class="hightlight">účinná</span> a že je
+                                <span class="hightlight">praktická.</span> Líbí se mi také, že mohu
+                                <span class="hightlight"
+                                    >pracovat s lidmi a spolu můžeme obnovovat důvěru k tomu zázraku zvanému život, a
+                                    dále tak mohu dávat to, co mi tak pozitivně a radikálně ovlivnilo život.</span
+                                >
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="education">
+                    <div class="container column60">
+                        <h3 class="top cnt uppercase">Vzdělání</h3>
+                        <ul class="education-list">
+                            <li class="btm2">
+                                2015—2019 <span class="bold">PCA institut Praha</span>, komplexní výcvikový program v
+                                psychoterapii a poradenství zaměřeném na člověka
+                            </li>
+                            <li class="btm2">
+                                2015—2019 <span class="bold">PCA institut Praha</span> výcvik v relaxačních technikách -
+                                Schultzův autogenní trénink
+                            </li>
+                            <li class="btm2">
+                                2014—2016 <span class="bold">Univerzita Vídeň,</span> psychologie (nedokončené)
+                            </li>
+                            <li class="btm2">
+                                2002—2009 <span class="bold">Technická univerzita Vídeň,</span> magisterské studium
+                                informatiky, dosažený titul Dipl.-Ing.
+                            </li>
+                            <li class="btm2">1997—2002 <span class="bold">Obchodní akademie Neusiedl/See</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!--Price Section-->
+            <section class="top container column60 btm" id="price">
+                <h3 class="cnt">Ceník a podmínky</h3>
+                <p>
+                    <span class="hightlight"
+                        >První setkání 400 CZK / 50 minut, následující setkání 800 CZK / 50 minut.</span
+                    >
+                </p>
+                <p>
+                    Pracuji pouze na přímou úhradu. To znamená, že si hradíte celou částku sami. Má to výhodu, že nikde
+                    nejsou vedeny záznamy o vaší terapii. Také umím obvykle poskytnout kratší čekací časy na termín než
+                    psychoterapeuti, kteří mají smluvní vztah se zdravotními pojišťovnami.
+                </p>
+                <p>
+                    Pokud se rozhodnete zrušit dohodnuté setkání, udělejte to do 24 hodin před ním, jinak Vám budu
+                    účtovat plnou cenu setkání.
+                </p>
+                <h4 class="uppercase">Jazyky</h4>
+                <p class="cnt">Terapii poskytuji ve slovenštině (česky rozumím), němčině nebo angličtině.</p>
+                <h4 class="uppercase">Etický kodex</h4>
+                <p class="cnt">
+                    Při práci se řídím etickým kodexem České asociace pro psychoterapii (ČAP) a absolvuji pravidelné
+                    supervize.
+                </p>
+            </section>
+
+            <!-- Contact Section-->
+            <section class="contact top" id="contact">
+                <div class="container column60">
+                    <h3 class="cnt">Kontakt</h3>
+                    <p>
+                        Terapii poskytuji v
+                        <a href="http://www.avasa.cz/cz/kontakt" class="hightlight">Centru Avasa</a>, Křižíkova 308/19,
+                        Praha 8. Je to blízko stanice metra B/C Florenc.
+                    </p>
+                    <!--             <p>My working hours are Monday 9:00–17:00, Tuesday to Friday 9:00–20:00.</p> -->
+                    <p>
+                        Pokud nezvedám telefon, je možné, že právě poskytuji terapii. V tom případě zkuste zavolat
+                        později nebo mi napište mail.
+                    </p>
+                </div>
+                <div class="row">
+                    <div class="contact-card cnt">
+                        <a class="hover-dark" href="#">
+                            <p>
+                                <span class="uppercase">E-mail</span>
+                                <i class="fa fa-envelope-open-o" aria-hidden="true"></i>
+                                martin.uzak@gmail.com
+                            </p>
+                        </a>
+                    </div>
+                    <div class="contact-card cnt">
+                        <a href="https://goo.gl/maps/v56Ng7rJSUBt8yDP7" class="hover-dark">
+                            <p><span class="uppercase">Adresa</span>Křižíkova 308/19, 186 00 Praha 8 - Karlín</p>
+                        </a>
+                    </div>
+
+                    <div class="contact-card cnt">
+                        <a href="tel:+420775966121" class="hover-dark">
+                            <p>
+                                <span class="uppercase">Telefon</span><i class="fa fa-phone" aria-hidden="true"></i>+420
+                                775 966 121
+                            </p>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- Footer -->
+        <footer>
+            <p class="footer-text">Copyright © <span lang="sk">Martin Užák</span> 2019</p>
+        </footer>
+        <script type="text/javascript" src="collapse.js"></script>
+    </body>
 </html>
