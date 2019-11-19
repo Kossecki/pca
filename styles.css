@@ -281,8 +281,8 @@ ul {
 .langs-switcher-options[data-state="open"] {
     display: block;
     position: absolute;
-    width: 9.5rem;
-    margin-left: -1rem;
+    width: 10rem;
+    margin-left: -1.5rem;
     padding-left: 1rem;
     background-color: coral;
 }
