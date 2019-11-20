@@ -8,6 +8,18 @@ mobile.onclick = function (e) {
   e.preventDefault();
 };
 
+function closeMobileMenu() {
+    document.querySelector('.menu-box-list').setAttribute('data-state', 'closed');
+}
+
+// close the menu on a click on the first child of the menu-item 
+let mobile_menu_items = document.getElementsByClassName("menu-item");
+for (let i=0; i<mobile_menu_items.length; i++) {
+    mobile_menu_items[i].childNodes[0].onclick = function (e) {
+        closeMobileMenu();
+    }
+}
+
 switcher.onclick = function (e) {
   toggleState('.langs-switcher-options', 'closed', 'open');
   e.preventDefault();
@@ -30,8 +42,8 @@ function parentHasClass(elem, className) {
 window.onclick = function(event) {
   // close mobile menu on clicks outside of it
   if (!parentHasClass(event.target, 'navbar-menu-box')) {
-    document.querySelector('.menu-box-list').setAttribute('data-state', 'closed');
-  }
+    closeMobileMenu();
+  } 
 
   // close the deskop language switcher if the user clicks outside of it
   if (!parentHasClass(event.target, 'langs-switcher')) {
