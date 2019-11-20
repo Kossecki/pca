@@ -1,28 +1,14 @@
-// mobile 'menu' button
-let element = document.getElementById('mobile');
-let list = document.getElementById('list');
+const switcher = document.querySelector('.default-lang');
+const mobile = document.querySelector('.accordion');
+const toggleState = function (elem, one, two) {
+    document.querySelector(elem).setAttribute('data-state', document.querySelector(elem).getAttribute('data-state') === one ? two : one);
+};
+mobile.onclick = function (e) {
+  toggleState('.menu-box-list', 'open', 'closed');
+  e.preventDefault();
+};
 
-element.onclick = function () {
-    list.classList.toggle('visible');
-}
-
-// desktop language switcher
-let langsOptions = document.getElementById("langs-switcher-options");
-let active = document.getElementById("active");
-
-active.onclick = () => {
-    langsOptions.classList.toggle('visible');
-}
-
-window.onclick = function(event) {
-    // close the deskop language switcher if the user clicks outside of it
-    if (!event.target.matches(".default-lang")) {
-        langsOptions.classList.remove('visible');
-    }
-
-    // close mobile menu on clicks outside of it
-    this.console.log(event.target)
-    if (!event.target.matches(".accordion")) {
-        list.classList.remove('visible');
-    }
-}
+switcher.onclick = function (e) {
+  toggleState('.langs-switcher-options', 'closed', 'open');
+  e.preventDefault();
+};
