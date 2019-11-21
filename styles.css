@@ -19,7 +19,7 @@ html {
 }
 
 body {
-    font-family: Nunito, 'Trebuchet MS', Arial, sans-serif;
+    font-family: Nunito, "Trebuchet MS", Arial, sans-serif;
     letter-spacing: 0.0625em;
 }
 
@@ -477,13 +477,7 @@ issues-list {
     background-position-y: bottom;
 }
 
-.fa {
-    padding-right: 0.5rem;
-    line-height: 1.3;
-    color: black;
-}
-
-.premises{
+.premises {
     color: purple;
     text-decoration: underline;
 }
@@ -575,4 +569,3 @@ issues-list {
 .hover-dark:hover {
     color: purple;
 }
-
