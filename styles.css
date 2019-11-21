@@ -444,6 +444,7 @@ issues-list {
     }
 }
 
+/* Contact */
 .contact-card {
     text-align: center;
     width: 280px;
@@ -487,10 +488,14 @@ issues-list {
     color: black;
 }
 
+.premises{
+    color: purple;
+    text-decoration: underline;
+}
+
 .uppercase {
     font-family: Nunito;
     display: block;
-
     text-align: center;
     font-size: 1.8rem;
     line-height: 1.8;
