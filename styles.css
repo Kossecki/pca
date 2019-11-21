@@ -457,6 +457,18 @@ issues-list {
     box-shadow: 0 1px 0 #db4a0d7d, 0 4px 6px #db4a0d7a;
 }
 
+.contact-card-email::before {
+    content: "\f2b7";
+    font-family: "fontawesome";
+    padding-right: 0.5rem;
+}
+
+.contact-card-phone::before {
+    content: "\f095";
+    font-family: "fontawesome";
+    padding-right: 0.5rem;
+}
+
 .text-white {
     color: white;
     background-image: url("photo-1470115636492-6d2b56f9146d.jpeg");
@@ -564,3 +576,4 @@ issues-list {
 .hover-dark:hover {
     color: purple;
 }
+
