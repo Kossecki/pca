@@ -19,7 +19,7 @@ html {
 }
 
 body {
-    font-family: Nunito, "Fira Sans", sans-serif;
+    font-family: Nunito, 'Trebuchet MS', Arial, sans-serif;
     letter-spacing: 0.0625em;
 }
 
@@ -133,7 +133,6 @@ ul {
 
 .navbar-description {
     margin-left: 0.6rem;
-    font-family: Nunito;
     display: none;
     align-self: center;
 }
@@ -296,7 +295,6 @@ ul {
 /* Main */
 
 .main-title {
-    font-family: Nunito;
     font-size: 5.7rem;
     line-height: 1;
     margin-bottom: 3.1rem;
@@ -361,9 +359,6 @@ ul {
     }
 }
 
-.portrait-text {
-    font-family: Nunito;
-}
 .smaller-text {
     padding-right: 2rem;
     font-weight: 300;
@@ -494,7 +489,6 @@ issues-list {
 }
 
 .uppercase {
-    font-family: Nunito;
     display: block;
     text-align: center;
     font-size: 1.8rem;
