@@ -322,7 +322,7 @@ ul {
         max-width: 50%;
         font-size: 1.7rem;
         background: linear-gradient(126.6deg, hsl(16, 100%, 66%), white);
-        background-color: hsl(0, 0%, 100%)
+        background-color: hsl(0, 0%, 100%);
         box-shadow: 0 1px 0 #db4a0d7d, 0 4px 6px #db4a0d7a;
     }
 }
