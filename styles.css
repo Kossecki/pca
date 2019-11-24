@@ -545,8 +545,19 @@ issues-list {
     margin-bottom: 3rem;
 }
 .btm2 {
+    list-style: none;
     margin-bottom: 0.5rem;
 }
+.btm2::before {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-right: 5px;
+    vertical-align: middle;
+    background-color: hsl(16, 100%, 66%);
+}
+
 .light {
     font-weight: 300;
 }
