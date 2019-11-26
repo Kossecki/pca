@@ -20,6 +20,7 @@ html {
 
 body {
     font-family: Nunito, "Trebuchet MS", Arial, sans-serif;
+    color: hsl(0, 0%, 0%);
     letter-spacing: 0.0625em;
 }
 
@@ -31,17 +32,17 @@ a {
     padding: 0;
     background-color: none;
     text-decoration: none;
-    color: black;
+    color: hsl(0, 0%, 0%);
     border: none;
 }
 
 a:hover {
-    color: white;
-    background-color: plum;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(300, 47%, 75%);
 }
 
 a:active {
-    color: purple;
+    color: hsl(300, 100%, 25%);
 }
 
 ul {
@@ -128,7 +129,7 @@ ul {
     margin-left: auto;
     justify-content: space-between;
     align-items: center;
-    background-color: coral;
+    background-color: hsl(16, 100%, 66%);
 }
 
 .navbar-description {
@@ -147,10 +148,10 @@ ul {
     width: 50%;
     border: none;
     outline: none;
-    border: 1px solid white;
+    border: 1px solid hsl(0, 0%, 100%);
     border-radius: 3px;
     padding: 1rem;
-    background-color: coral;
+    background-color: hsl(16, 100%, 66%);
 }
 
 #mobile {
@@ -162,7 +163,7 @@ ul {
     border-radius: 3px;
     align-self: baseline;
     text-align: center;
-    background-color: coral;
+    background-color: hsl(16, 100%, 66%);
 }
 
 @media (min-width: 942px) {
@@ -198,8 +199,8 @@ ul {
 
 .langs-menu {
     display: flex;
-    color: purple;
-    background-color: plum;
+    color: hsl(300, 100%, 25%);
+    background-color: hsl(300, 47%, 75%);
 }
 
 .navbar-options,
@@ -245,7 +246,7 @@ ul {
 .navbar-list-item::after {
     content: "/";
     padding-left: 0.9rem;
-    color: purple;
+    color: hsl(300, 100%, 25%);
 }
 
 .navbar-list-item-lang {
@@ -264,9 +265,9 @@ ul {
 }
 
 #active {
-    color: purple;
-    background-color: plum;
-    padding-left: 1rem;
+    color: hsl(300, 100%, 25%);
+    background-color: hsl(300, 47%, 75%);
+    padding-left: 0.5rem;
     margin-left: -1.5rem;
 }
 #active::after {
@@ -289,7 +290,7 @@ ul {
     width: 10rem;
     margin-left: -1.5rem;
     padding-left: 1rem;
-    background-color: coral;
+    background-color: hsl(16, 100%, 66%);
 }
 
 /* Main */
@@ -315,20 +316,20 @@ ul {
         display: block;
         text-align: center;
         margin: 3rem auto;
-        border: 1px solid coral;
+        border: 1px solid hsl(16, 100%, 66%);
         border-radius: 12.5px;
         padding: 1.5rem 1rem;
         max-width: 50%;
         font-size: 1.7rem;
-        background: linear-gradient(126.6deg, coral, white);
-        background-color: white;
+        background: linear-gradient(126.6deg, hsl(16, 100%, 66%), white);
+        background-color: hsl(0, 0%, 100%);
         box-shadow: 0 1px 0 #db4a0d7d, 0 4px 6px #db4a0d7a;
     }
 }
 
 @media (max-width: 760px) {
     .appt-intl :hover {
-        color: purple;
+        color: hsl(300, 100%, 25%);
     }
 }
 
@@ -366,7 +367,6 @@ ul {
 
 .text-left {
     font-size: 3rem;
-    /*   color: coral; */
 }
 
 h2 {
@@ -402,7 +402,7 @@ p {
 /*Header*/
 
 .contact {
-    background: linear-gradient(to bottom, #f7f7f7 0, rgba(212, 192, 192, 0.5) 75%, coral 100%);
+    background: linear-gradient(to bottom, hsl(0, 0%, 97%) 0, hsl(13, 72%, 83%) 75%, hsl(16, 100%, 66%) 100%);
     padding-bottom: 3px;
 }
 
@@ -424,7 +424,7 @@ issues-list {
 .individual-counselling,
 .issues,
 .education {
-    background-color: rgb(238, 236, 236);
+    background-color: hsl(0, 6%, 93%);
     padding-bottom: 2rem;
 }
 
@@ -455,7 +455,7 @@ issues-list {
     margin: 3rem auto;
     padding: 2rem 1rem 1rem 1rem;
     font-size: 1.7rem;
-    background-color: white;
+    background-color: hsl(0, 0%, 100%);;
     box-shadow: 0 1px 0 #db4a0d7d, 0 4px 6px #db4a0d7a;
 }
 
@@ -471,20 +471,9 @@ issues-list {
     padding-right: 0.5rem;
 }
 
-.text-white {
-    color: white;
-    background-image: url("photo-1470115636492-6d2b56f9146d.jpeg");
-    background-size: cover;
-    padding-top: 4.2rem;
-    padding-left: 1rem;
-    padding-bottom: 1rem;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position-y: bottom;
-}
 
 .premises {
-    color: purple;
+    color: hsl(300, 100%, 25%);
     text-decoration: underline;
 }
 
@@ -503,7 +492,7 @@ issues-list {
     width: 60%;
     padding-top: 0.6rem;
     margin-bottom: 1.5rem;
-    border-bottom: 2px solid coral;
+    border-bottom: 2px solid hsl(16, 100%, 66%);
 }
 @media (max-width: 500px) {
     uppercase {
@@ -524,14 +513,14 @@ issues-list {
     margin-bottom: 0;
     padding-top: 2rem;
     padding-bottom: 5rem;
-    background-color: coral;
-    color: white;
+    background-color: hsl(16, 100%, 66%);
+    color: hsl(0, 0%, 100%);
     font-size: 0.9rem;
 }
 
 #langs {
-    color: purple;
-    background-color: plum;
+    color: hsl(300, 100%, 25%);
+    background-color: hsl(300, 47%, 75%);
 }
 
 /* Utilities */
@@ -556,8 +545,19 @@ issues-list {
     margin-bottom: 3rem;
 }
 .btm2 {
+    list-style: none;
     margin-bottom: 0.5rem;
 }
+.btm2::before {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-right: 5px;
+    vertical-align: middle;
+    background-color: hsl(16, 100%, 66%);
+}
+
 .light {
     font-weight: 300;
 }
@@ -566,12 +566,13 @@ issues-list {
     font-weight: 800;
 }
 .highlight {
-    background-color: #ffe8de;
+    background-color: hsl(18, 100%, 94%);
 }
 
 .margin-standard-top {
     margin-top: 2.5rem;
 }
 .hover-dark:hover {
-    color: purple;
+    color: hsl(300, 100%, 25%);
+    font-weight: 700;
 }
