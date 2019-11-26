@@ -267,7 +267,7 @@ ul {
 #active {
     color: hsl(300, 100%, 25%);
     background-color: hsl(300, 47%, 75%);
-    padding-left: 1rem;
+    padding-left: 0.5rem;
     margin-left: -1.5rem;
 }
 #active::after {
