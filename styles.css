@@ -387,7 +387,7 @@ ul {
     padding-top: 2rem;
 }
 
-@media (min-width: 770px) {
+@media (min-width: 770px){
     .portrait-mobile {
         display: none;
     }
@@ -443,7 +443,7 @@ issues-list {
 .contact-card {
     text-align: center;
     width: 280px;
-    height: auto;
+    height: 140px;
     flex-grow: 0.3;
     flex-shrink: 0;
     margin: 3rem auto;
@@ -451,6 +451,16 @@ issues-list {
     font-size: 1.7rem;
     background-color: hsl(0, 0%, 100%);;
     box-shadow: 0 1px 0 #db4a0d7d, 0 4px 6px #db4a0d7a;
+}
+@media (min-width:699.99px){
+    .contact-card{
+        height: 220px;;
+    }
+}
+@media (min-width:699.99px)and (max-width: 1200px) {
+    .contact-card{
+        padding-top: 4rem;;
+    }
 }
 
 .contact-card-email::before {
