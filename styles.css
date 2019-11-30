@@ -309,28 +309,29 @@ ul {
 }
 
 .appt-intl {
-    display: none;
+    display: block;
+    margin: 3rem auto;
+    text-align: center;
+    border-radius: 12.5px;
+    padding: 1.5rem 1rem;
+/*     border: 1px solid hsl(16, 100%, 66%); */
+    max-width: 50%;
+    font-size: 1.7rem;
+    font-weight: bold;
+/*     background: linear-gradient(126.6deg, hsl(16, 100%, 66%), white); */
+    background-color: hsl(16, 100%, 66%);
+    box-shadow: 0 1px 0 #db4a0d7d, 0 4px 6px #db4a0d7a;
 }
-@media (max-width: 760px) {
+@media (min-width: 760px) {
     .appt-intl {
-        display: block;
-        text-align: center;
-        margin: 3rem auto;
-        border: 1px solid hsl(16, 100%, 66%);
-        border-radius: 12.5px;
-        padding: 1.5rem 1rem;
-        max-width: 50%;
-        font-size: 1.7rem;
-        background: linear-gradient(126.6deg, hsl(16, 100%, 66%), white);
-        background-color: hsl(0, 0%, 100%);
-        box-shadow: 0 1px 0 #db4a0d7d, 0 4px 6px #db4a0d7a;
+        display: none;
     }
 }
 
-@media (max-width: 760px) {
-    .appt-intl :hover {
+
+.appt-intl :hover {
+    background-color: hsl(300, 47%, 75%);
         color: hsl(300, 100%, 25%);
-    }
 }
 
 .portrait {
