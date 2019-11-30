@@ -24,10 +24,41 @@ body {
     letter-spacing: 0.0625em;
 }
 
+.container {
+    max-width: 1200px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 /* General text styles */
 h1 {
     margin: 0;
 }
+
+h2 {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    font-size: 2rem;
+}
+
+h3 {
+    margin-top: 1rem;
+    margin-block-start: 0px;
+    margin-block-end: 0.5rem;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+p {
+    margin-top: 0.4rem;
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
 a {
     padding: 0;
     background-color: none;
@@ -35,7 +66,6 @@ a {
     color: hsl(0, 0%, 0%);
     border: none;
 }
-
 a:hover {
     color: hsl(0, 0%, 100%);
     background-color: hsl(300, 47%, 75%);
@@ -363,45 +393,6 @@ ul {
     }
 }
 
-.smaller-text {
-    padding-right: 2rem;
-    font-weight: 300;
-}
-
-.text-left {
-    font-size: 3rem;
-}
-
-h2 {
-    margin-top: 1rem;
-    margin-bottom: 0.5rem;
-    margin-block-start: 0px;
-    margin-block-end: 0px;
-    font-size: 2rem;
-}
-
-h3 {
-    margin-top: 1rem;
-    margin-block-start: 0px;
-    margin-block-end: 0.5rem;
-    font-size: 2rem;
-    font-weight: 700;
-}
-
-p {
-    margin-top: 0.4rem;
-    font-size: 1.5rem;
-    line-height: 1.5;
-}
-
-.container {
-    max-width: 1200px;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-}
-
 /*Header*/
 
 .contact {
@@ -473,7 +464,6 @@ issues-list {
     font-family: "fontawesome";
     padding-right: 0.5rem;
 }
-
 
 .premises {
     color: hsl(300, 100%, 25%);
@@ -578,4 +568,13 @@ issues-list {
 .hover-dark:hover {
     color: hsl(300, 100%, 25%);
     font-weight: 700;
+}
+
+.smaller-text {
+    padding-right: 2rem;
+    font-weight: 300;
+}
+
+.text-left {
+    font-size: 3rem;
 }
