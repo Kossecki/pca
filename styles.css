@@ -24,10 +24,41 @@ body {
     letter-spacing: 0.0625em;
 }
 
+.container {
+    max-width: 1200px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 /* General text styles */
 h1 {
     margin: 0;
 }
+
+h2 {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    font-size: 2rem;
+}
+
+h3 {
+    margin-top: 1rem;
+    margin-block-start: 0px;
+    margin-block-end: 0.5rem;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+p {
+    margin-top: 0.4rem;
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
 a {
     padding: 0;
     background-color: none;
@@ -35,7 +66,6 @@ a {
     color: hsl(0, 0%, 0%);
     border: none;
 }
-
 a:hover {
     color: hsl(0, 0%, 100%);
     background-color: hsl(300, 47%, 75%);
@@ -146,11 +176,13 @@ ul {
 /* Mobile Navigation */
 .accordion {
     width: 50%;
+    margin-top: 0.3rem;
     border: none;
     outline: none;
     border: 1px solid hsl(0, 0%, 100%);
     border-radius: 3px;
     padding: 1rem;
+    font-weight: bold;
     background-color: hsl(16, 100%, 66%);
 }
 
@@ -190,7 +222,7 @@ ul {
     margin-left: auto;
     margin-right: auto;
     border-bottom: 1px solid papayawhip;
-    padding: 2rem 3rem;
+    padding: 2rem;
     font-size: 1.5rem;
 }
 .menu-item :last-child {
@@ -309,28 +341,29 @@ ul {
 }
 
 .appt-intl {
-    display: none;
+    display: block;
+    margin: 3rem auto;
+    text-align: center;
+    border-radius: 12.5px;
+    padding: 1.5rem 1rem;
+/*     border: 1px solid hsl(16, 100%, 66%); */
+    max-width: 50%;
+    font-size: 1.7rem;
+    font-weight: bold;
+/*     background: linear-gradient(126.6deg, hsl(16, 100%, 66%), white); */
+    background-color: hsl(16, 100%, 66%);
+    box-shadow: 0 1px 0 #db4a0d7d, 0 4px 6px #db4a0d7a;
 }
-@media (max-width: 760px) {
+@media (min-width: 760px) {
     .appt-intl {
-        display: block;
-        text-align: center;
-        margin: 3rem auto;
-        border: 1px solid hsl(16, 100%, 66%);
-        border-radius: 12.5px;
-        padding: 1.5rem 1rem;
-        max-width: 50%;
-        font-size: 1.7rem;
-        background: linear-gradient(126.6deg, hsl(16, 100%, 66%), white);
-        background-color: hsl(0, 0%, 100%);
-        box-shadow: 0 1px 0 #db4a0d7d, 0 4px 6px #db4a0d7a;
+        display: none;
     }
 }
 
-@media (max-width: 760px) {
-    .appt-intl :hover {
+
+.appt-intl :hover {
+    background-color: hsl(300, 47%, 75%);
         color: hsl(300, 100%, 25%);
-    }
 }
 
 .portrait {
@@ -354,49 +387,10 @@ ul {
     padding-top: 2rem;
 }
 
-@media (min-width: 770px) {
+@media (min-width: 770px){
     .portrait-mobile {
         display: none;
     }
-}
-
-.smaller-text {
-    padding-right: 2rem;
-    font-weight: 300;
-}
-
-.text-left {
-    font-size: 3rem;
-}
-
-h2 {
-    margin-top: 1rem;
-    margin-bottom: 0.5rem;
-    margin-block-start: 0px;
-    margin-block-end: 0px;
-    font-size: 2rem;
-}
-
-h3 {
-    margin-top: 1rem;
-    margin-block-start: 0px;
-    margin-block-end: 0.5rem;
-    font-size: 2rem;
-    font-weight: 700;
-}
-
-p {
-    margin-top: 0.4rem;
-    font-size: 1.5rem;
-    line-height: 1.5;
-}
-
-.container {
-    max-width: 1200px;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
 }
 
 /*Header*/
@@ -449,7 +443,7 @@ issues-list {
 .contact-card {
     text-align: center;
     width: 280px;
-    height: auto;
+    height: 140px;
     flex-grow: 0.3;
     flex-shrink: 0;
     margin: 3rem auto;
@@ -457,6 +451,16 @@ issues-list {
     font-size: 1.7rem;
     background-color: hsl(0, 0%, 100%);;
     box-shadow: 0 1px 0 #db4a0d7d, 0 4px 6px #db4a0d7a;
+}
+@media (min-width:699.99px){
+    .contact-card{
+        height: 220px;;
+    }
+}
+@media (min-width:699.99px)and (max-width: 1200px) {
+    .contact-card{
+        padding-top: 4rem;;
+    }
 }
 
 .contact-card-email::before {
@@ -470,7 +474,6 @@ issues-list {
     font-family: "fontawesome";
     padding-right: 0.5rem;
 }
-
 
 .premises {
     color: hsl(300, 100%, 25%);
@@ -547,15 +550,7 @@ issues-list {
 .btm2 {
     list-style: none;
     margin-bottom: 0.5rem;
-}
-.btm2::before {
-    content: "";
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    margin-right: 5px;
-    vertical-align: middle;
-    background-color: hsl(16, 100%, 66%);
+    padding-top: 1.5rem;
 }
 
 .light {
@@ -575,4 +570,13 @@ issues-list {
 .hover-dark:hover {
     color: hsl(300, 100%, 25%);
     font-weight: 700;
+}
+
+.smaller-text {
+    padding-right: 2rem;
+    font-weight: 300;
+}
+
+.text-left {
+    font-size: 3rem;
 }
