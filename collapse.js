@@ -45,7 +45,7 @@ window.onclick = function(event) {
     closeMobileMenu();
   } 
 
-  // close the deskop language switcher if the user clicks outside of it
+  // close the desktop language switcher if the user clicks outside of it
   if (!parentHasClass(event.target, 'langs-switcher')) {
     document.querySelector('.langs-switcher-options').setAttribute('data-state', 'closed');
   }
