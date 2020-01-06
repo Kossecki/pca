@@ -65,14 +65,15 @@ a {
     text-decoration: none;
     color: hsl(0, 0%, 0%);
     border: none;
+    font-size: 1rem;
+    font-weight: 700;
 }
 a:hover {
     color: hsl(0, 0%, 100%);
-    background-color: hsl(300, 47%, 75%);
 }
 
 a:active {
-    color: hsl(300, 100%, 25%);
+    color: (0, 0%, 100%);
 }
 
 ul {
@@ -155,6 +156,10 @@ ul {
     width: 100%;
     height: 4rem;
     position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 500;
     margin-right: auto;
     margin-left: auto;
     justify-content: space-between;
@@ -231,8 +236,7 @@ ul {
 
 .langs-menu {
     display: flex;
-    color: hsl(300, 100%, 25%);
-    background-color: hsl(300, 47%, 75%);
+    background-color: hsl(13, 70%, 48%);
 }
 
 .navbar-options,
@@ -240,6 +244,7 @@ ul {
     display: none;
     list-style-type: none;
 }
+
 @media (min-width: 942px) {
     .navbar-options,
     .navbar-list {
@@ -275,18 +280,21 @@ ul {
     padding-right: 1.3rem;
 }
 
-.navbar-list-item::after {
-    content: "/";
-    padding-left: 0.9rem;
-    color: hsl(300, 100%, 25%);
-}
-
 .navbar-list-item-lang {
     display: block;
     font-size: 1.2rem;
     line-height: 1.7;
     text-transform: uppercase;
     font-weight: 600;
+    padding-left: 1rem;
+    background-color: hsl(16, 81%, 54%);
+}
+a.navbar-list-item-lang:hover {
+    background-color: hsl(13, 70%, 48%);
+}
+
+a.navbar-list-item-lang:active {
+    color: hsl(18, 100%, 94%)
 }
 
 .langs-switcher {
@@ -297,20 +305,19 @@ ul {
 }
 
 #active {
-    color: hsl(300, 100%, 25%);
-    background-color: hsl(300, 47%, 75%);
-    padding-left: 0.5rem;
+    height: 4rem;
+    color: hsl(0, 0%, 100%);
     margin-left: -1.5rem;
+    border-left: 1px solid papayawhip;
+    padding-top: 0.6rem;
+    padding-left: 0.5rem;
 }
+
 #active::after {
     content: "\f0d7";
     font-family: "fontawesome";
     font-size: 1.4rem;
     margin-left: 0.5rem;
-}
-
-#active:hover {
-    color: white;
 }
 
 .langs-switcher-options[data-state="closed"] {
@@ -321,7 +328,6 @@ ul {
     position: absolute;
     width: 10rem;
     margin-left: -1.5rem;
-    padding-left: 1rem;
     background-color: hsl(16, 100%, 66%);
 }
 
@@ -478,6 +484,7 @@ issues-list {
 .premises {
     color: hsl(300, 100%, 25%);
     text-decoration: underline;
+    font-size: 1.5rem;
 }
 
 .uppercase {
