@@ -239,6 +239,10 @@ ul {
     background-color: hsl(13, 70%, 48%);
 }
 
+.default-lang {
+    text-align: center;
+}
+
 .navbar-options,
 .navbar-list {
     display: none;
