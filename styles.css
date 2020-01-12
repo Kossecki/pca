@@ -454,7 +454,7 @@ issues-list {
     text-align: center;
     width: 280px;
     height: 140px;
-    flex-grow: 0.3;
+    flex-grow: 0;
     flex-shrink: 0;
     margin: 3rem auto;
     padding: 2rem 1rem 1rem 1rem;
@@ -462,14 +462,24 @@ issues-list {
     background-color: hsl(0, 0%, 100%);;
     box-shadow: 0 1px 0 #db4a0d7d, 0 4px 6px #db4a0d7a;
 }
-@media (min-width:699.99px){
+@media (min-width:499.99px){
     .contact-card{
-        height: 220px;;
+        width: 60%;
+        height: 150px;
     }
 }
-@media (min-width:699.99px)and (max-width: 1200px) {
+
+@media (min-width:699.99px){
     .contact-card{
-        padding-top: 4rem;;
+        width: 40%;
+        height: 170px;
+    }
+}
+
+@media (min-width:1199.99px){
+    .contact-card{
+        width: 30%;
+        height: 220px;
     }
 }
 
